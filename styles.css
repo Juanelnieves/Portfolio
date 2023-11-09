@@ -1,0 +1,173 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, figure, figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.navbar {
+  background: #333;
+  color: #fff;
+  overflow: hidden;
+}
+
+.navbar ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.navbar ul li a {
+  color: #fff;
+  padding: 1rem;
+  display: block;
+}
+
+.navbar .logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.section {
+  padding: 20px 0;
+}
+
+.bg-light {
+  background: #f4f4f4;
+}
+
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+}
+
+.form-group input[type='text'],
+.form-group input[type='email'],
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+}
+
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+footer p {
+  text-align: center;
+}
+
+/* Additional styles for the animated banner and profile section */
+.animated-banner {
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background-size: cover;
+text-align: center;
+color: white;
+}
+
+.profile-section {
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+opacity: 0;
+transform: translateX(100%);
+transition: opacity 0.5s, transform 0.5s;
+}
+
+.profile-section.active {
+opacity: 1;
+transform: translateX(0);
+}
+
+.profile-image {
+width: 200px;
+height: 200px;
+background-size: cover;
+border-radius: 50%;
+flex-shrink: 0;
+margin-right: 20px;
+}
+
+.profile-info {
+flex-grow: 1;
+}
+
+.profile-info, .profile-image {
+opacity: 0; /* Set to 0 for GSAP to animate */
+}
+
+#gallery {
+  overflow-x: hidden; /* Hide the horizontal scrollbar */
+  position: relative; /* Position relative for absolute positioning inside */
+  white-space: nowrap; /* Keep all items in one line */
+  padding: 20px 0;
+}
+
+.gallery-container {
+  display: flex; /* Display items in a row */
+  gap: 20px; /* Gap between items */
+}
+
+.gallery-item {
+  display: inline-block;
+  width: 200px; /* Example width */
+  height: 300px; /* Example height */
+  margin-right: 10px; /* Space between items */
+  background: #ccc; /* Placeholder color */
+  text-align: center;
+  vertical-align: top; /* Align items to the top */
+  white-space: normal; /* Override the white-space from #gallery */
+}
+
+.gallery-item img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Remove extra space under the image */
+}
