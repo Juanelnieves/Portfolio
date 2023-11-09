@@ -1,52 +1,63 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+  <script src="script.js"></script>
+  <header id="home">
 
-<nav id="navbar">
-  <div class="container">
-    <h1 class="logo"><a href="#home">MyPortfolio</a></h1>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#work">Work</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </div>
-</nav>
+    <div class="animated-banner">
+      <h2 class="left-title">I'm Web Designer</h2>
+      <div class="placeholder-3d-image"></div>
+      <h2 class="right-title">Juan Gonzalez</h2>
+    </div>
 
-<header id="home">
-  <div class="animated-banner" style="background-color: black ;">
-    <h2>Welcome to My Portfolio</h2>
-    <p>I am a Web Designer & Developer</p>
-  </div>
-</header>
+    </div>
+  </header>
+        <section id="profile-section">
+            <div id="profileImage"></div>
+        </section>
+        
 
-<section id="about" class="section profile-section">
-  <div class="profile-image" id="profileImage" style="background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAIAAAAiOjnJAAACEklEQVR4nO3SQQkAIADAQDW50S3hEOQuwR6bYw+4br0O4E/GImEsEsYiYSwSxiJhLBLGImEsEsYiYSwSxiJhLBLGImEsEsYiYSwSxiJhLBLGImEsEsYiYSwSxiJhLBLGImEsEsYiYSwSxiJhLBLGImEsEsYiYSwSxiJhLBLGImEsEsYiYSwSxiJhLBLGImEsEsYiYSwSxiJhLBLGImEsEsYiYSwSxiJhLBLGImEsEsYiYSwSxiJhLBLGImEsEsYiYSwSxiJhLBLGImEsEsYiYSwSxiJhLBLGImEsEsYiYSwSxiJhLBLGImEsEsYiYSwSxiJhLBLGImEsEsYiYSwSxiJhLBLGImEsEsYiYSwSxiJhLBLGImEsEsYiYSwSxiJhLBLGImEsEsYiYSwSxiJhLBLGImEsEsYiYSwSxiJhLBLGImEsEsYiYSwSxiJhLBLGImEsEsYiYSwSxiJhLBLGImEsEsYiYSwSxiJhLBLGImEsEsYiYSwSxiJhLBLGImEsEsYiYSwSxiJhLBLGImEsEsYiYSwSxiJhLBLGImEsEsYiYSwSxiJhLBLGImEsEsYiYSwSxiJhLBLGImEsEsYiYSwSxiJhLBLGImEsEsYiYSwSxiJhLBLGImEsEsYiYSwSxiJhLBLGImEsEsYiYSwSxiJhLBLGImEsEsYiYSwSxiJhLBLGImEsEsYiYSwSxiJhLBIHjh0CEPZdHgsAAAAASUVORK5CYII=');"></div>
-  <div class="profile-info" id="profileInfo">
-    <h2>About Me</h2>
-    <p>Here is some information about me...</p>
-  </div>
-</section>
+  <section id="about" class="section profile-section">
+    <div class="profile-image" id="profileImage">
+    </div>
+    <div class="profile-info" id="profileInfo">
+      <h2>About Me</h2>
+      <p>Here is some information about me...</p>
+    </div>
+  </section>
 
-
-<script src="script.js"></script>
-
-<section id="gallery">
-  <section id="gallery">
-  <div class="gallery-container">
-    <div class="gallery-item"><img src="pablo.jpg" alt="Gallery Image 1" class="gallery-image"/></div>
-    <div class="gallery-item"><img src="pablo.jpg" alt="Gallery Image 2" class="gallery-image"/></div>
-    <div class="gallery-item"><img src="pablo.jpg" alt="Gallery Image 3" class="gallery-image"/></div>
-    <div class="gallery-item"><img src="pablo.jpg" alt="Gallery Image 4" class="gallery-image"/></div>
-    <div class="gallery-item"><img src="pablo.jpg" alt="Gallery Image 5" class="gallery-image"/></div>
-  </div>
+  <section id="content-cards">
+    <div class="container">
+      <h2>Content Cards</h2>
+      <div class="card-grid">
+        <div class="card">
+          <img src="pablo.jpg" alt="Card Image 1">
+          <div class="card-content">
+            <h3>Card Title 1</h3>
+            <p>Paaablo</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="pablo.jpg" alt="Card Image 2">
+          <div class="card-content">
+            <h3>Card Title 2</h3>
+            <p>Paaablo</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.10.4/dist/gsap.min.js"></script>
 </body>
+
 </html>
