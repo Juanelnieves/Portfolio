@@ -143,11 +143,8 @@ body {
   line-height: 1.6;
 }
 
-
-
 @keyframes spin {
   100% {
     transform: rotate(360deg);
   }
 }
-
