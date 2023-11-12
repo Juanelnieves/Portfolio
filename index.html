@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,53 +9,82 @@
 </head>
 
 <body>
-  <script src="script.js"></script>
-  <header id="home">
+  <div class="scroll-container-outer">
+    <div class="scroll-container-inner">
 
-    <div class="animated-banner">
-      <h2 class="left-title">I'm Web Designer</h2>
-      <div class="placeholder-3d-image"></div>
-      <h2 class="right-title">Juan Gonzalez</h2>
-    </div>
-
-    </div>
-  </header>
-        <section id="profile-section">
-            <div id="profileImage"></div>
-        </section>
-        
-
-  <section id="about" class="section profile-section">
-    <div class="profile-image" id="profileImage">
-    </div>
-    <div class="profile-info" id="profileInfo">
-      <h2>About Me</h2>
-      <p>Here is some information about me...</p>
-    </div>
-  </section>
-
-  <section id="content-cards">
-    <div class="container">
-      <h2>Content Cards</h2>
-      <div class="card-grid">
-        <div class="card">
-          <img src="pablo.jpg" alt="Card Image 1">
-          <div class="card-content">
-            <h3>Card Title 1</h3>
-            <p>Paaablo</p>
-          </div>
+      <script src="script.js"></script>
+      <div class="scroll-container-outer">
+        <div class="scroll-container-inner">
         </div>
-        <div class="card">
-          <img src="pablo.jpg" alt="Card Image 2">
-          <div class="card-content">
-            <h3>Card Title 2</h3>
-            <p>Paaablo</p>
+      </div>
+
+      <header id="home">
+        <div class="animated-banner">
+          <h2 class="left-title">I'm Web Designer</h2>
+          <div class="placeholder-3d-image"></div>
+          <h2 class="right-title">Juan Gonzalez</h2>
+        </div>
+
+    </div>
+    </header>
+    <section id="profile-section">
+      <div id="profileImage"></div>
+    </section>
+
+
+    <section id="about" class="section profile-section">
+      <div class="profile-image" id="profileImage">
+      </div>
+      <div class="profile-info" id="profileInfo">
+        <h2>About Me</h2>
+        <p>Here is some information about me...</p>
+      </div>
+    </section>
+
+    <section id="content-cards">
+      <div class="container">
+        <h2>Content Cards</h2>
+        <div class="card-grid">
+          <div class="card">
+            <img src="pablo.jpg" alt="Card Image 1">
+            <div class="card-content">
+              <h3>Card Title 1</h3>
+              <p>Paaablo</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="pablo.jpg" alt="Card Image 2">
+            <div class="card-content">
+              <h3>Card Title 2</h3>
+              <p>Paaablo</p>
+            </div>
           </div>
         </div>
       </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__progress-bar"></div>
+      <a href="javascript:void(0);" class="footer_text" onclick="resetPageAnimation();">Personal Portfolio &copy;
+        2023</a>
+      <a href="#contact-form" class="footer_button">Contact Me</a>
+    </footer>
+
+    <div id="loadingAnimation" class="loading-overlay" style="display:none;">
+      <div class="loading-bar">
+        <div class="loading-fill" id="loadingFill"></div>
+      </div>
+      <div class="loading-content">
+        <div class="loading-bar"></div>
+        <div id="loadingPercentage" class="loading-percentage">0%</div>
+      </div>
     </div>
-  </section>
-  <script src="script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.10.4/dist/gsap.min.js"></script>
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.10.4/dist/gsap.min.js"></script>
+  </div>
+  
 </body>
+
 </html>
