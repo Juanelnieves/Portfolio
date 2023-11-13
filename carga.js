@@ -21,3 +21,4 @@ function resetPageAnimation() {
         }
     }, 30);
 }
+
