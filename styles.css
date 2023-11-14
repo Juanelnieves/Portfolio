@@ -112,67 +112,141 @@ body {
 
 #contact-form {
   font-family: 'Arial', sans-serif;
-  color: #333;
+  color: #fff;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 40px auto;
+  background: #000;
+  padding: 20px;
   margin-top: 10vw;
   margin-bottom: 10vw;
 }
 
-/* Styling form sections */
-.form-section {
+#contact-form h2 {
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+#contact-form .input-group {
   margin-bottom: 20px;
 }
 
-/* Styling input fields */
-.input-group {
-  display: flex;
-  flex-direction: column;
-}
-
-input[type="text"],
-input[type="email"],
-button[type="submit"] {
-  padding: 10px;
+#contact-form input[type="text"],
+#contact-form input[type="email"] {
+  width: 100%;
+  padding: 15px;
   margin-bottom: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  outline: none;
+  transition: all 0.3s ease;
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus {
-  border-color: #007bff;
+#contact-form input[type="text"]::placeholder,
+#contact-form input[type="email"]::placeholder {
+  color: #fff;
 }
 
-/* Label styling */
-label {
-  margin-bottom: 5px;
-  font-weight: bold;
+#contact-form input[type="text"]:focus,
+#contact-form input[type="email"]:focus {
+  border-color: #555;
 }
 
-/* Button styling */
-button {
+.radio-input {
+  display: none; /*Quita el boton default del radio*/
+}
+
+.radio-label {
+  display: inline-block;
+  background-color: #000000;
+  color: #fff;
   padding: 10px 20px;
-  border: none;
-  margin: 5px;
-  border-radius: 5px;
-  background-color: #007bff;
-  color: white;
+  margin: 0 10px 10px 0;
+  border: 2px solid transparent;
+  border-color: #777;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.radio-label:hover,
+.radio-input:checked + .radio-label {
+  background-color: #555;
+  border-color: #ffffff;
+}
+#contact-form .radio-option {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  user-select: none;
+}
+
+#contact-form .radio-option input {
+  position: absolute;
+  opacity: 0;
   cursor: pointer;
 }
 
-button:hover {
-  background-color: #0056b3;
+#contact-form .radio-option::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+  transition: background-color 0.3s;
 }
 
-/* Submit button styling */
-button[type="submit"] {
-  background-color: #000000;
+#contact-form .radio-option input:checked ~ .checkmark {
+  background-color: #2196F3;
 }
 
-button[type="submit"]:hover {
-  background-color: #ffffff;
+#contact-form .radio-option:hover::before {
+  background-color: #ccc;
+}
+
+#contact-form .radio-option input:checked ~ ::before {
+  background-color: #2196F3;
+}
+
+#contact-form .radio-option::after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+#contact-form .radio-option input:checked ~ ::after {
+  display: block;
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+#contact-form button[type="submit"] {
+  width: auto;
+  display: block;
+  margin: 20px auto 0;
+  background-color: #fff;
   color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#contact-form button[type="submit"]:hover {
+  background-color: #555;
+  color: #fff;
 }
 
 
