@@ -58,7 +58,6 @@ body {
 }
 
 /*Estilos foto perfil */
-
 .profile-section {
   display: flex;
   align-items: center;
@@ -108,8 +107,15 @@ body {
   margin-bottom: 1rem;
 }
 
-/*Estilos para contact form*/
+/*Fotos con barra lateral*/
+.races {
+	width:fit-content;
+	display:flex;
+	flex-wrap:nowrap;
+  margin: 10px;
+}
 
+/*Estilos para contact form*/
 #contact-form {
   font-family: 'Arial', sans-serif;
   color: #fff;
@@ -295,23 +301,14 @@ body {
   color: grey;
 }
 
-/*Fotos con barra lateral*/
-.races {
-	width:fit-content;
-	display:flex;
-	flex-wrap:nowrap;
-  margin: 10px;
-}
-
-
-
 /*Estilos footer */
 .footer {
   border: 1px solid var(--grey); 
   backdrop-filter: blur(10px);
   z-index: 2;
   -webkit-backface-visibility: hidden;
-  background-color: #000; 
+  background-color: #000000;
+  opacity: 90%;
   color: #fff; 
   border: 1px solid #555; 
   border-radius: 20px;
@@ -332,8 +329,6 @@ body {
   bottom: 50px;
   overflow: hidden;
 }
-
-/* Estilos para el botón "Contact Me" */
 
 .footer_text {
   margin-right:auto; 
