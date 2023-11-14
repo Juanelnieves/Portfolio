@@ -1,0 +1,343 @@
+
+/*Galeria de cards*/
+.services-section {
+    width: 100% !important;
+    margin-bottom: 250px;
+  }
+  .services__matter-js {
+    width: 100%;
+    height: 1vh;
+  }
+  .services__header {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    line-height: 100%;
+    text-align: center;
+    position: relative;
+    z-index: -1;
+  }
+  
+  .services__content {
+    margin-top: 20px;
+    display: flex;
+    column-gap: 445px;
+  }
+  
+  .services__content-left {
+    display: flex;
+    flex-direction: column;
+    row-gap: 316px;
+  }
+  
+  .services__content-left_text {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.75rem;
+    font-weight: 400;
+    width: 290px;
+    margin-left: 3rem;
+  }
+  
+  .services__content-cards {
+    display: flex;
+    gap: 15px 40px;
+    margin-right: 60px;
+  }
+  
+  .services__content-card_design,
+  .services__content-card_development,
+  .services__content-card_website {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1050px;
+    padding: 50px;
+    gap: 30px;
+    border-radius: 50px;
+    background: rgb(107, 104, 104);
+    max-height: 640px;
+  }
+  
+  .services__content-card_design_top,
+  .services__content-card_development_top,
+  .services__content-card_website_top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 60px 96px;
+  }
+  
+  .services__content-card_design_bottom,
+  .services__content-card_development_bottom,
+  .services__content-card_website_bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .services__content-card_design_video {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .services__content-card_design_description {
+    color: white;
+  
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.875rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1.2; /* Reduce el espacio entre líneas; ajusta según sea necesario */
+    max-width: 550px;
+  }
+  
+  .services__content-card_design_text {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5.625rem;
+    font-weight: 500;
+  }
+  
+  .services__content-card_design_counter {
+    color: lightgrey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5.625rem;
+    font-weight: 500;
+    text-align: end;
+  }
+  
+  .services__content-card_development {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1050px;
+    padding: 50px;
+    gap: 30px;
+    border-radius: 50px;
+    background: white;
+    max-height: 640px;
+  }
+  
+  .services__content-card_development_video {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .services__content-card_development_description {
+    color:black;
+  
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.875rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    max-width: 550px;
+  }
+  
+  .services__content-card_development_text {
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5.625rem;
+    font-weight: 500;
+  }
+  
+  .services__content-card_development_counter {
+    color: lightgrey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5.625rem;
+    font-weight: 500;
+    text-align: end;
+  }
+  
+  .services__content-card_website {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1050px;
+    padding: 50px;
+    gap: 30px;
+    border-radius: 50px;
+    background: lightblue;
+    max-height: 640px;
+  }
+  
+  .services__content-card_website_video {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .services__content-card_website_description {
+    color:white;
+  
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.875rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    max-width: 550px;
+  }
+  
+  .services__content-card_website_text {
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5.625rem;
+    font-weight: 500;
+  }
+  
+  .services__content-card_website_counter {
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5.625rem;
+    font-weight: 500;
+    text-align: end;
+  }
+  
+  @media only screen and (max-width: 1860) {
+    .services__header {
+        font-size: 12rem;
+    }
+  }
+  
+  @media only screen and (max-width: 1024) {
+    .services__header {
+        font-size: 9rem;
+    }
+    .services__content {
+        column-gap: 200px;
+    }
+    .services__content-left_text {
+        font-size: 2rem;
+    }
+  }
+  
+  @media only screen and (max-width: 768) {
+    .services-section {
+        margin-bottom: 100px;
+    }
+  
+    .services__matter-js {
+        display: none;
+    }
+  
+    .services__header {
+        font-size: 6rem;
+    }
+  
+    .services__content-cards {
+        flex-wrap: wrap;
+        margin: 0;
+    }
+  
+    .services__content-left_text {
+        width: auto;
+    }
+  
+    .services__content {
+        overflow: hidden;
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+  
+    .services__content-card_design,
+    .services__content-card_development,
+    .services__content-card_website {
+        max-height: 1000px;
+        width: 100%;
+    }
+  
+    .services__content-card_development_video {
+        width: 200px;
+        height: 200px;
+    }
+  
+    .services__content-card_design_description,
+    .services__content-card_development_description,
+    .services__content-card_website_description {
+        font-size: 1.4rem;
+    }
+  
+    .services__content-card_design_counter,
+    .services__content-card_development_counter,
+    .services__content-card_website_counter {
+        font-size: 3.5rem;
+    }
+  
+    .services__content-card_design_text,
+    .services__content-card_development_text,
+    .services__content-card_website_text {
+        font-size: 3.5rem;
+    }
+  
+    .services__content-left {
+        flex-direction: row;
+        justify-content: space-between;
+        flex: 1;
+    }
+    .services__content-left_text {
+        font-size: 1.5rem;
+    }
+    .services__content-card_design_top {
+        flex-direction: column;
+    }
+  }
+  
+  @media only screen and (max-width: 600) {
+    .services__content-card_development_video {
+        width: 150px;
+        height: 150px;
+    }
+  
+    .services__content-card_design_description,
+    .services__content-card_development_description,
+    .services__content-card_website_description {
+        font-size: 1rem;
+    }
+  
+    .services__content-card_design_counter,
+    .services__content-card_development_counter,
+    .services__content-card_website_counter {
+        font-size: 2rem;
+    }
+  
+    .services__content-card_design_text,
+    .services__content-card_development_text,
+    .services__content-card_website_text {
+        font-size: 1.8rem;
+    }
+  
+    .services__header {
+        font-size: 4rem;
+    }
+  }
+  
+  @media only screen and (max-width: 320) {
+    .services__content-card_design_description,
+    .services__content-card_development_description,
+    .services__content-card_website_description {
+        font-size: 0.8rem;
+    }
+  
+    .services__content-card_design_counter,
+    .services__content-card_development_counter,
+    .services__content-card_website_counter {
+        font-size: 1.75rem;
+    }
+  
+    .services__content-card_design_text,
+    .services__content-card_development_text,
+    .services__content-card_website_text {
+        font-size: 1.75rem;
+    }
+  }
+  

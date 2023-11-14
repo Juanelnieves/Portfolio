@@ -107,13 +107,6 @@ body {
   margin-bottom: 1rem;
 }
 
-/*Fotos con barra lateral*/
-.races {
-	width:fit-content;
-	display:flex;
-	flex-wrap:nowrap;
-  margin: 10px;
-}
 
 /*Estilos para contact form*/
 #contact-form {
@@ -375,3 +368,4 @@ body {
     transform: rotate(360deg);
   }
 }
+

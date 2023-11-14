@@ -5,10 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.min.js"></script>
+  <link rel="stylesheet" href="cards.css">
+  <link rel="stylesheet" href="styles.css">
+
 
 </head>
 
@@ -36,27 +38,54 @@
   </section>
 
 
-  <div class="racesWrapper">
-    <div class="races">
-      <img src="pablo.jpg" alt="Card Image 2">
-      <img src="pablo.jpg" alt="Card Image 2">
-      <img src="pablo.jpg" alt="Card Image 2">
-      <img src="pablo.jpg" alt="Card Image 2">
-      <img src="pablo.jpg" alt="Card Image 2">
-      <img src="pablo.jpg" alt="Card Image 2">
-      <img src="pablo.jpg" alt="Card Image 2">
-      <img src="pablo.jpg" alt="Card Image 2">
-      <img src="pablo.jpg" alt="Card Image 2">
-      <img src="pablo.jpg" alt="Card Image 2">
-      <img src="pablo.jpg" alt="Card Image 2">
-      <img src="pablo.jpg" alt="Card Image 2">
-      <img src="pablo.jpg" alt="Card Image 2">
-      <img src="pablo.jpg" alt="Card Image 2">
-      <img src="pablo.jpg" alt="Card Image 2">
-      <img src="pablo.jpg" alt="Card Image 2">
-      <img src="pablo.jpg" alt="Card Image 2">
+  <section class="services-section">
+    <div class="services__matter-js"></div>
+    <h2 class="services__header">Services</h2>
+    <div class="services__content">
+      <div class="services__content-left">
+        <h4 class="services__content-left_text">How can I <br> assist you?</h4>
+      </div>
+      <div class="services__content-cards">
+        <div class="services__content-card_design">
+          <div class="services__content-card_design_top"> <video src="video1.mp4"
+              class="services__content-card_development_video" playsinline autoplay loop muted></video>
+            <p class="services__content-card_design_description">Design services are focused on
+              transforming the essence of your brand into a visually appealing and intuitively
+              understandable online presence.</p>
+          </div>
+          <div class="services__content-card_design_bottom">
+            <h4 class="services__content-card_design_text">Design</h4>
+            <h5 class="services__content-card_design_counter">01</h5>
+          </div>
+        </div>
+        <div class="services__content-card_development">
+          <div class="services__content-card_development_top"> <video src="video2.mp4"
+              class="services__content-card_development_video" playsinline autoplay loop muted></video>
+            <p class="services__content-card_development_description">Through web development, we
+              transform projects into functional, interactive websites that deliver exceptional
+              performance.</p>
+          </div>
+          <div class="services__content-card_development_bottom">
+            <h4 class="services__content-card_development_text"> Development </h4>
+            <h5 class="services__content-card_development_counter"> 02 </h5>
+          </div>
+        </div>
+        <div class="services__content-card_website">
+          <div class="services__content-card_website_top"> <video src="video3.mp4"
+              class="services__content-card_development_video" playsinline autoplay loop muted></video>
+            <p class="services__content-card_website_description">Effective web design and
+              development go hand in hand. A holistic approach combines innovative design concepts
+              with cutting-edge development methods to create websites that leave a lasting
+              impact.</p>
+          </div>
+          <div class="services__content-card_website_bottom">
+            <h4 class="services__content-card_website_text"> Website </h4>
+            <h5 class="services__content-card_website_counter"> 03 </h5>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
 
   <form id="contact-form">
     <div class="form-section">
@@ -73,21 +102,21 @@
       <div class="input-group">
         <input type="radio" id="work_together" name="interest" value="work_together" class="radio-input">
         <label for="work_together" class="radio-label">Work together</label>
-        
+
         <input type="radio" id="hire_service" name="interest" value="hire_service" class="radio-input">
         <label for="hire_service" class="radio-label">Hire a service</label>
       </div>
     </div>
-    
+
     <div class="form-section">
       <h2>Budget</h2>
       <div class="input-group">
         <input type="radio" id="budget_500_1k" name="budget" value="500-1k" class="radio-input">
         <label for="budget_500_1k" class="radio-label">$500-1k</label>
-        
+
         <input type="radio" id="budget_1k_3k" name="budget" value="1k-3k" class="radio-input">
         <label for="budget_1k_3k" class="radio-label">$1k-3k</label>
-        
+
         <input type="radio" id="budget_3k_5k" name="budget" value="3k-5k" class="radio-input">
         <label for="budget_3k_5k" class="radio-label">$3k-5k</label>
       </div>
@@ -100,7 +129,7 @@
     </div>
   </form>
 
-  
+
 
   <footer class="footer">
     <div class="footer__progress-bar"></div>

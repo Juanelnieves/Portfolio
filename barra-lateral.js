@@ -1,25 +1,23 @@
-const races = document.querySelector(".races");
-console.log(races.offsetWidth)
+const servicesContentCards = document.querySelector(".services__content");
 
 function getScrollAmount() {
-	let racesWidth = races.scrollWidth;
-	return -(racesWidth - window.innerWidth);
+    let contentWidth = servicesContentCards.scrollWidth;
+    return -(contentWidth - window.innerWidth);
 }
 
-const tween = gsap.to(races, {
-	x: getScrollAmount,
-	duration: 3,
-	ease: "none",
+const tween = gsap.to(servicesContentCards, {
+    x: getScrollAmount,
+    duration: 20, //Animación mas o menos lenta
+    ease: "none",
 });
 
-
 ScrollTrigger.create({
-	trigger:".racesWrapper",
-	start:"top 20%",
-	end: () => `+=${getScrollAmount() * -1}`,
-	pin:true,
-	animation:tween,
-	scrub:1,
-	invalidateOnRefresh:true,
-	markers:false //Activar a la hora de hacer modificaciones en la galeria de imagenes ya que nos dice los limites.
-})
+    trigger: ".services__content",
+    start: "top 5%",
+    end: () => `+=${Math.abs(getScrollAmount()) + window.innerHeight}`, // Añade la altura de la ventana para extender el rango de scroll
+    pin: true,
+    animation: tween,
+    scrub: 3, //Velocidad scroll lateral
+    invalidateOnRefresh: true,
+    markers: true // Activar para hacer modificaciones, muestra los límites de la animación.
+});
