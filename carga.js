@@ -1,37 +1,58 @@
 window.onload = function() {
-    // Primero, desplazarse al banner de inmediato
-    document.getElementById('home').scrollIntoView({ behavior: 'instant' });
-    // Luego, inicia la animación de carga
-    resetPageAnimation();
+  document.getElementById('home').scrollIntoView({ behavior: 'instant' });
+  resetPageAnimation();
 };
 
 function resetPageAnimation() {
-    document.getElementById('loadingAnimation').style.display = 'flex';
-    let progress = 0;
-    const loadingFill = document.getElementById('loadingFill');
-    let interval = setInterval(function() {
-        progress += 1;
-        loadingFill.style.width = progress + '%';
-        document.getElementById('loadingPercentage').innerText = progress + '%';
-        if (progress >= 100) {
-            clearInterval(interval);
-            // Desplazar al banner justo antes de que la animación termine
-            document.getElementById('home').scrollIntoView({ behavior: 'instant' });
-            document.getElementById('loadingAnimation').style.display = 'none';
-        }
-    }, 30);
+  document.getElementById('loadingAnimation').style.display = 'flex';
+  let progress = 0;
+  const loadingFill = document.getElementById('loadingFill');
+  let interval = setInterval(function() {
+      progress += 1;
+      loadingFill.style.width = progress + '%';
+      document.getElementById('loadingPercentage').innerText = progress + '%';
+      if (progress >= 100) {
+          clearInterval(interval);
+          document.getElementById('home').scrollIntoView({ behavior: 'instant' });
+          document.getElementById('loadingAnimation').style.display = 'none';
+          // Start the reveal animation after the loading is complete
+          startRevealAnimation();
+      }
+  }, 30);
 }
-document.addEventListener("DOMContentLoaded", () => {
-    const profileSection = document.getElementById('profile-section');
-  
-    const observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('active');
-          observer.unobserve(entry.target); // Opcional: deja de observar después de activar la animación
-        }
-      });
-    }, { threshold: 0.1 }); // El umbral de 0.1 indica que la animación se activará cuando el 10% de la sección esté visible
-  
-    observer.observe(profileSection);
-  });
+
+let animationStarted = false;
+
+function startRevealAnimation() {
+  if (!animationStarted) {
+      animationStarted = true;
+      revealLetters();
+  }
+}
+
+window.addEventListener('scroll', function() {
+  var profileSection = document.getElementById('profile-section');
+  var windowHeight = window.innerHeight;
+  var profileSectionRect = profileSection.getBoundingClientRect();
+
+  // Check if the profile section is in view and the animation hasn't started yet
+  if (!animationStarted && profileSectionRect.top <= windowHeight) {
+      startRevealAnimation();
+  }
+});
+
+function revealLetters() {
+  var spans = document.getElementsByClassName('main__description-span');
+  var delay = 0;
+  var revealRate = 100; // Time in milliseconds between each letter reveal
+
+  for (var i = 0; i < spans.length; i++) {
+      spans[i].style.transition = 'opacity 1s';
+      spans[i].style.opacity = 0;
+      setTimeout(function(span) {
+          span.style.opacity = 1;
+      }, delay, spans[i]);
+
+      delay += revealRate;
+  }
+}
