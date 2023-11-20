@@ -21,4 +21,17 @@ function resetPageAnimation() {
         }
     }, 30);
 }
-
+document.addEventListener("DOMContentLoaded", () => {
+    const profileSection = document.getElementById('profile-section');
+  
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          observer.unobserve(entry.target); // Opcional: deja de observar después de activar la animación
+        }
+      });
+    }, { threshold: 0.1 }); // El umbral de 0.1 indica que la animación se activará cuando el 10% de la sección esté visible
+  
+    observer.observe(profileSection);
+  });

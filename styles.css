@@ -56,56 +56,24 @@ body {
   background-color: #444;
   animation: spin 10s linear infinite;
 }
+@media only screen and (max-width: 1024) {
+  .animated-banner {
+      position: initial;
+  }
+}
 
+@media only screen and (max-width: 600) {
+  .animated-banner {
+      justify-content: center;
+      padding: 41px 0;
+  }
+
+  .left-title, .right-title,
+  .placeholder-3d-image {
+      display: none;
+  }
+}
 /*Estilos foto perfil */
-.profile-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 30vh;
-  opacity: 0;
-  transform: translateX(100%);
-  transition: opacity 0.5s, transform 0.5s;
-}
-
-.profile-section.active {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-.profile-image {
-  width: 200px;
-  height: 200px;
-  background-size: cover;
-  border-radius: 50%;
-  flex-shrink: 0;
-  margin-right: 20px;
-}
-
-.profile-info {
-  flex-grow: 1;
-}
-
-.profile-info,
-.profile-image {
-  opacity: 1;
-}
-
-.profile-section {
-  text-align: center;
-  padding: 4rem 0;
-}
-
-#profileImage {
-  width: 200px;
-  height: 200px;
-  background: url("pablo.jpg") no-repeat center center;
-  background-size: cover;
-  border-radius: 100%;
-  display: inline-block;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
 
 
 /*Estilos para contact form*/

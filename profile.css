@@ -1,0 +1,36 @@
+.profile-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Esto separará la imagen y el texto */
+    min-height: 30vh;
+    padding: 4rem 0;
+    transition: opacity 10s, transform 5s;
+  }
+  
+  .profile-section.active {
+    opacity: 1; /* Se vuelve visible */
+    transform: translateX(0); /* Se mueve al centro */
+  }
+  
+  .profile-image {
+    width: 200px;
+    height: 200px;
+    background: url("pablo.jpg") no-repeat center center;
+    background-size: cover;
+    border-radius: 100%;
+    margin-left: 10rem;
+  }
+  
+  .profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    text-align: right; 
+    margin-right: 10rem; 
+  }
+  
+  
+  .main__description {
+    font-size: 4rem;
+  }
