@@ -25,7 +25,7 @@ const tl = gsap.timeline({
     end: "+=150%",
     pin: true,
     scrub: 0.50,
-    markers: true,
+    markers: false,
   }
 })
 .set(chars, { color: "#ffffff", stagger: 1 }, 0.5);

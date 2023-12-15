@@ -9,7 +9,7 @@
 .profile-image {
   width: 400px; 
   height: 500px;
-  background: url("pablo.jpg") no-repeat center center;
+  background: url("../assets/juan.jpg") no-repeat center center;
   background-size: cover; /* Va a cubrir el div con la imagen*/
   margin-left: 10rem;
 }

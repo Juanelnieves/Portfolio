@@ -19,5 +19,5 @@ ScrollTrigger.create({
     animation: tween,
     scrub: 3, //Velocidad scroll lateral
     invalidateOnRefresh: true,
-    markers: true // Activar para hacer modificaciones, muestra los límites de la animación.
+    markers: false // Activar para hacer modificaciones, muestra los límites de la animación.
 });

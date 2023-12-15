@@ -8,9 +8,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.min.js"></script>
-  <link rel="stylesheet" href="cards.css">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="profile.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/profile.css">
 
 </head>
 
@@ -46,7 +46,7 @@
       </div>
       <div class="services__content-cards">
         <div class="services__content-card_design">
-          <div class="services__content-card_design_top"> <video src="video1.mp4"
+          <div class="services__content-card_design_top"> <video src="assets/video1.mp4"
               class="services__content-card_development_video" playsinline autoplay loop muted></video>
             <p class="services__content-card_design_description">Design services are focused on
               transforming the essence of your brand into a visually appealing and intuitively
@@ -58,7 +58,7 @@
           </div>
         </div>
         <div class="services__content-card_development">
-          <div class="services__content-card_development_top"> <video src="video2.mp4"
+          <div class="services__content-card_development_top"> <video src="assets/video2.mp4"
               class="services__content-card_development_video" playsinline autoplay loop muted></video>
             <p class="services__content-card_development_description">Through web development, we
               transform projects into functional, interactive websites that deliver exceptional
@@ -70,7 +70,7 @@
           </div>
         </div>
         <div class="services__content-card_website">
-          <div class="services__content-card_website_top"> <video src="video3.mp4"
+          <div class="services__content-card_website_top"> <video src="assets/video3.mp4"
               class="services__content-card_development_video" playsinline autoplay loop muted></video>
             <p class="services__content-card_website_description">Effective web design and
               development go hand in hand. A holistic approach combines innovative design concepts
@@ -86,16 +86,17 @@
     </div>
   </section>
 
-  <form id="contact-form">
+  <form id="contact-form" action="https://formspree.io/f/xjvnbvay" method="POST">
     <div class="form-section">
       <h2>Your Data</h2>
       <div class="input-group">
         <input type="text" id="name" name="name" placeholder="Name*" required>
       </div>
       <div class="input-group">
-        <input type="email" id="email" name="email" placeholder="Email*" required>
+        <input type="email" id="email" name="_replyto" placeholder="Email*" required>
       </div>
     </div>
+
     <div class="form-section">
       <h2>You are interested in</h2>
       <div class="input-group">
@@ -120,6 +121,7 @@
         <label for="budget_3k_5k" class="radio-label">$3k-5k</label>
       </div>
     </div>
+
     <div class="form-section">
       <div class="input-group">
         <input type="text" id="details" name="details" required placeholder="Project details*">
@@ -127,6 +129,7 @@
       <button type="submit">Submit message</button>
     </div>
   </form>
+
 
 
 
@@ -147,10 +150,10 @@
     </div>
 
 
-    
-    <script src="carga.js"></script>
-    <script src="progresiontexto.js"></script>
-    <script src="barra-lateral.js"></script>
+
+    <script src="js/carga.js"></script>
+    <script src="js/progresiontexto.js"></script>
+    <script src="js/barra-lateral.js"></script>
 
 </body>
 
